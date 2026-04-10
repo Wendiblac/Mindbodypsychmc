@@ -910,6 +910,18 @@ button.close {
     font-size: 28px;
   }
 
+  .about-section .aboutsum {
+    margin-bottom: 40px !important;
+  }
+
+  .whyus-section .whylist {
+    padding-bottom: 40px !important;
+  }
+
+  .whylist ul .third {
+    display: none !important;
+  }
+
   .team-card {
     grid-template-columns: 1fr !important;
     text-align: center;
