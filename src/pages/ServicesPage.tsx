@@ -1,12 +1,8 @@
-import { useState } from "react";
-import { CalendlyModal } from "../components/CalendlyModal";
 import { PageLayout } from "../components/PageLayout";
 import { PrimaryCta } from "../components/PrimaryCta";
 import { assetPath, servicesCards } from "../data/siteData";
 
 export function ServicesPage() {
-  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
-
   return (
     <PageLayout>
       <section className="hero-section">
@@ -60,8 +56,7 @@ export function ServicesPage() {
         </div>
       </section>
 
-      <PrimaryCta onOpenCalendly={() => setIsCalendlyOpen(true)} />
-      <CalendlyModal isOpen={isCalendlyOpen} onClose={() => setIsCalendlyOpen(false)} />
+      <PrimaryCta />
     </PageLayout>
   );
 }

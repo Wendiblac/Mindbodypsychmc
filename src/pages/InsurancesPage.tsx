@@ -1,12 +1,8 @@
-import { useState } from "react";
-import { CalendlyModal } from "../components/CalendlyModal";
 import { PageLayout } from "../components/PageLayout";
 import { PrimaryCta } from "../components/PrimaryCta";
 import { assetPath, insuranceLogos } from "../data/siteData";
 
 export function InsurancesPage() {
-  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
-
   return (
     <PageLayout headerButtonVariant="png" logoVariant="png" footerLogoVariant="png">
       <section className="hero-section">
@@ -70,8 +66,7 @@ export function InsurancesPage() {
         </div>
       </section>
 
-      <PrimaryCta onOpenCalendly={() => setIsCalendlyOpen(true)} />
-      <CalendlyModal isOpen={isCalendlyOpen} onClose={() => setIsCalendlyOpen(false)} />
+      <PrimaryCta />
     </PageLayout>
   );
 }

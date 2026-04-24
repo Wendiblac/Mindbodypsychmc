@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { CalendlyModal } from "../components/CalendlyModal";
 import { PageLayout } from "../components/PageLayout";
 import { PrimaryCta } from "../components/PrimaryCta";
 import { assetPath } from "../data/siteData";
@@ -27,8 +25,6 @@ const education = [
 ];
 
 export function AboutPage() {
-  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
-
   return (
     <PageLayout>
       <section className="header-section">
@@ -281,8 +277,7 @@ export function AboutPage() {
         </div>
       </section>
 
-      <PrimaryCta onOpenCalendly={() => setIsCalendlyOpen(true)} />
-      <CalendlyModal isOpen={isCalendlyOpen} onClose={() => setIsCalendlyOpen(false)} />
+      <PrimaryCta />
     </PageLayout>
   );
 }

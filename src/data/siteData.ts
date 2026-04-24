@@ -3,7 +3,8 @@ export type AssetVariant = "svg" | "png";
 export const assetPath = (filename: string) => `/assets/${filename}`;
 
 export const externalLinks = {
-  calendly: "https://calendly.com/mindbodypsychmc",
+  booking:
+    "https://drchrono.com/scheduling/offices/dGhpcyBpcyAxNiBjaGFyczLdYNT6Af9Axf-6AiMdoGg=",
   psychologyToday: "https://www.psychologytoday.com/profile/1490314",
   facebook: "https://www.facebook.com/mindbodypsychmc",
   instagram: "https://www.instagram.com/mindbodypsychmc",

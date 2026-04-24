@@ -1,5 +1,4 @@
 import { useState, type FormEvent } from "react";
-import { CalendlyModal } from "../components/CalendlyModal";
 import { PageLayout } from "../components/PageLayout";
 import { PillButton } from "../components/PillButton";
 import { PrimaryCta } from "../components/PrimaryCta";
@@ -8,7 +7,6 @@ import { submitHtmlForm } from "../lib/forms";
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
 export function ContactPage() {
-  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
   const [formStatus, setFormStatus] = useState<FormStatus>("idle");
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -145,8 +143,7 @@ export function ContactPage() {
         </div>
       </section>
 
-      <PrimaryCta onOpenCalendly={() => setIsCalendlyOpen(true)} />
-      <CalendlyModal isOpen={isCalendlyOpen} onClose={() => setIsCalendlyOpen(false)} />
+      <PrimaryCta />
     </PageLayout>
   );
 }

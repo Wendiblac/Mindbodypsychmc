@@ -1,12 +1,8 @@
-import { useState } from "react";
-import { CalendlyModal } from "../components/CalendlyModal";
 import { PageLayout } from "../components/PageLayout";
 import { PrimaryCta } from "../components/PrimaryCta";
 import { articles } from "../data/siteData";
 
 export function BlogPage() {
-  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
-
   return (
     <PageLayout>
       <section className="hero-section">
@@ -32,8 +28,7 @@ export function BlogPage() {
         </div>
       </section>
 
-      <PrimaryCta onOpenCalendly={() => setIsCalendlyOpen(true)} />
-      <CalendlyModal isOpen={isCalendlyOpen} onClose={() => setIsCalendlyOpen(false)} />
+      <PrimaryCta />
     </PageLayout>
   );
 }

@@ -1,16 +1,18 @@
-import { useState } from "react";
-import { CalendlyModal } from "../components/CalendlyModal";
 import { CommentForm } from "../components/CommentForm";
 import { PageLayout } from "../components/PageLayout";
 import { PillButton } from "../components/PillButton";
-import { articles, assetPath, type ArticleSlug } from "../data/siteData";
+import {
+  articles,
+  assetPath,
+  externalLinks,
+  type ArticleSlug,
+} from "../data/siteData";
 
 interface ArticlePageProps {
   slug: ArticleSlug;
 }
 
 export function ArticlePage({ slug }: ArticlePageProps) {
-  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
   const article = articles.find((item) => item.slug === slug);
 
   if (!article) {
@@ -64,7 +66,9 @@ export function ArticlePage({ slug }: ArticlePageProps) {
             <p>Start your journey to total wellness today.</p>
             <PillButton
               className="consult-btn"
-              onClick={() => setIsCalendlyOpen(true)}
+              href={externalLinks.booking}
+              target="_blank"
+              rel="noreferrer"
               variant="solid"
             >
               Consult Now
@@ -72,8 +76,6 @@ export function ArticlePage({ slug }: ArticlePageProps) {
           </div>
         </div>
       </section>
-
-      <CalendlyModal isOpen={isCalendlyOpen} onClose={() => setIsCalendlyOpen(false)} />
     </PageLayout>
   );
 }

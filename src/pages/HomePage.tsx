@@ -1,8 +1,12 @@
 import { useState, type FormEvent } from "react";
-import { CalendlyModal } from "../components/CalendlyModal";
 import { PageLayout } from "../components/PageLayout";
 import { PillButton } from "../components/PillButton";
-import { assetPath, homeServiceCards, testimonials } from "../data/siteData";
+import {
+  assetPath,
+  externalLinks,
+  homeServiceCards,
+  testimonials,
+} from "../data/siteData";
 import { submitHtmlForm } from "../lib/forms";
 
 const homeInsuranceLead = [
@@ -31,7 +35,6 @@ const homeInsuranceTail = [
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
 export function HomePage() {
-  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
   const [formStatus, setFormStatus] = useState<FormStatus>("idle");
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -67,7 +70,9 @@ export function HomePage() {
             <li>
               <PillButton
                 className="consult-btn"
-                onClick={() => setIsCalendlyOpen(true)}
+                href={externalLinks.booking}
+                target="_blank"
+                rel="noreferrer"
                 variant="solid"
               >
                 Consult Now
@@ -76,7 +81,9 @@ export function HomePage() {
             <li>
               <PillButton
                 className="zocdoc"
-                onClick={() => setIsCalendlyOpen(true)}
+                href={externalLinks.booking}
+                target="_blank"
+                rel="noreferrer"
                 variant="outline"
               >
                 Book Online
@@ -106,7 +113,9 @@ export function HomePage() {
 
                 <div className="zocdoc">
                   <PillButton
-                    onClick={() => setIsCalendlyOpen(true)}
+                    href={externalLinks.booking}
+                    target="_blank"
+                    rel="noreferrer"
                     variant="outline"
                   >
                     Book Online
@@ -304,7 +313,9 @@ export function HomePage() {
                 <div>
                   <PillButton
                     className="consult-btn"
-                    onClick={() => setIsCalendlyOpen(true)}
+                    href={externalLinks.booking}
+                    target="_blank"
+                    rel="noreferrer"
                     variant="solid"
                   >
                     Consult Now
@@ -474,11 +485,6 @@ export function HomePage() {
           ) : null}
         </div>
       </section>
-
-      <CalendlyModal
-        isOpen={isCalendlyOpen}
-        onClose={() => setIsCalendlyOpen(false)}
-      />
     </PageLayout>
   );
 }
