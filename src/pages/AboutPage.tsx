@@ -235,48 +235,6 @@ export function AboutPage() {
         </div>
       </section>
 
-      <section className="team-section">
-        <div className="wrapper">
-          <div className="title">
-            <h1>Meet the Team</h1>
-          </div>
-
-          <div className="team-card">
-            <div className="team-image">
-              <img
-                src={assetPath("katie-johnson.jpeg")}
-                alt="Katie Johnson, Office Manager and Medical Assistant"
-              />
-            </div>
-
-            <div className="team-content">
-              <p className="team-kicker">The face behind the phone</p>
-              <h4>Katie Johnson</h4>
-              <p className="team-role">Office Manager & Medical Assistant</p>
-
-              <p>
-                Katie Johnson is a dedicated office manager and medical assistant to Abigail
-                Asumadu-Mensah, with six years of experience in medical office settings.
-                Passionate about supporting others, she strives to provide exceptional care
-                through compassion, integrity, and a welcoming approach.
-              </p>
-
-              <p>
-                Katie believes that seeking help is a sign of strength, and she works to create
-                an environment where patients feel understood and supported. As a mother of a
-                special needs son, she brings a personal perspective and deep empathy to her
-                work, seeing each interaction as an opportunity to give back to the community.
-              </p>
-
-              <p>
-                Originally from Richmond Hill, Georgia, she has since made Virginia her home,
-                where she continues to make a positive impact in the lives of those she serves.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <PrimaryCta />
     </PageLayout>
   );
