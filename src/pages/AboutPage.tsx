@@ -50,7 +50,7 @@ export function AboutPage() {
                     Family Nurse Practitioner & Psychiatric Mental Health Nurse Practitioner
                   </span>
                   <br />
-                  Licensed in Virginia, West Virginia & Washington, D.C
+                  Licensed in Virginia, Maryland & Washington, D.C
                 </p>
               </div>
             </div>
@@ -69,7 +69,7 @@ export function AboutPage() {
           <p>
             Abigail T. Asumadu-Mensah is a dual-licensed Family Nurse Practitioner and
             Psychiatric Mental Health Nurse Practitioner, proudly serving clients across
-            Virginia, West Virginia and Washington, D.C.
+            Virginia, Maryland and Washington, D.C.
           </p>
 
           <div className="first">
