@@ -212,7 +212,7 @@ export function HomePage() {
                       <span style={{ fontStyle: "italic", fontSize: "14px" }}>
                         Family Nurse Practitioner & Psychiatric Mental Health
                         Nurse Practitioner Licensed in Virginia, Washington,
-                        D.C. and West Virginia.
+                        D.C. and Maryland.
                       </span>
                       <br />
                       Abigail is a compassionate and highly qualified provider
