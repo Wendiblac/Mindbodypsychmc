@@ -17,7 +17,7 @@ export function PrimaryCta({
           <p>Start your journey to total wellness today.</p>
           <div className="cta-btns">
             <PillButton
-              href={externalLinks.booking}
+              href={externalLinks.consulting}
               target="_blank"
               rel="noreferrer"
               variant="solid"

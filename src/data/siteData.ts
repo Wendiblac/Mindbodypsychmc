@@ -3,12 +3,13 @@ export type AssetVariant = "svg" | "png";
 export const assetPath = (filename: string) => `/assets/${filename}`;
 
 export const externalLinks = {
-  booking:
-    "https://us-74451.et.gong.io/email-tracking/clicked?email-info-token=eyJhbGciOiJIUzI1NiJ9.eyJjb21wYW55SWQiOiIxMzIxMTY2NDAzNzM2Njc3OTI5IiwiZHJhZnRJZCI6InI0ODQxMzU1Njc4OTcxODM4MTI3IiwibGlua1VybCI6Imh0dHBzOi8vd3d3LnpvY2RvYy5jb20vYm9va2luZy1saW5rL3ByYWN0aWNlL21pbmQtYW5kLWJvZHktcHN5Y2hpYXRyeS1hbmQtbWVkaWNhbC1zZXJ2aWNlcy0xMzcxNjAiLCJsaW5rVGV4dCI6Imh0dHBzOi8vd3d3LnpvY2RvYy5jb20vYm9va2luZy1saW5rL3ByYWN0aWNlL21pbmQtYW5kLWJvZHktcHN5Y2hpYXRyeS1hbmQtbWVkaWNhbC1zZXJ2aWNlcy0xMzcxNjAiLCJ0ZW1wbGF0ZUlkIjoiIiwiZXhwIjoxNzkyNDM5MDAxLCJpYXQiOjE3OTA2MjQ2MDEsImp0aSI6IjlLMUgwK1JGNjIyMiJ9.n42QikbCCOfhR4YX102bmlmdgKo-R8-YBNxUiKuqKjQ",
+  consulting:
+    "https://www.zocdoc.com/practice/mind-and-body-psychiatry-and-medical-services-137160?isNewPatient=true&utm_term=booking_link&referrerType=widget",
   psychologyToday: "https://www.psychologytoday.com/profile/1490314",
   facebook: "https://www.facebook.com/mindbodypsychmc",
   instagram: "https://www.instagram.com/mindbodypsychmc",
   linkedin: "https://www.linkedin.com/company/mindbodypsychmc",
+  booking: "https://drchrono.com/scheduling/offices/dGhpcyBpcyAxNiBjaGFyczLdYNT6Af9Axf-6AiMdoGg=",
 } as const;
 
 export const footerLinks = [

@@ -70,7 +70,7 @@ export function HomePage() {
             <li>
               <PillButton
                 className="consult-btn"
-                href={externalLinks.booking}
+                href={externalLinks.consulting}
                 target="_blank"
                 rel="noreferrer"
                 variant="solid"
@@ -313,7 +313,7 @@ export function HomePage() {
                 <div>
                   <PillButton
                     className="consult-btn"
-                    href={externalLinks.booking}
+                    href={externalLinks.consulting}
                     target="_blank"
                     rel="noreferrer"
                     variant="solid"
