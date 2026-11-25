@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         })
         .catch(() => {
-          alert("Network error. Please try again.");
+          alert("Network error. Please check your connection and try again.");
         });
     });
   }
